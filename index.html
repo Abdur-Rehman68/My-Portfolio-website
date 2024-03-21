@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
-<style>
-    table,tr,td,th{
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-</style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>    
+    <style>
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        </style>
 <body>
     <div id="page">
+        <div id="nav">
+            <a href="./contact.html" target="_blank">Contact</a>
+            
+            <a href="./project.html" target="_blank">Projects</a>
+            
+            <a href="./skill.html" target="_blank">Skills</a>
+            <div id="search">
+                <input id="sts" placeholder="Search this site">
+                <button id="sch">Search</button>
+            </div>
+            
+            <!-- <a href="#top">Go to top</a> -->
+        </div>
         <div id="header">
             <h1>Home Page</h1>
         </div>
         <div id="content">
-            <img id="top" src="./images/me.jpg" alt="My selfie" width="150"/>
+            <img  src="./images/me.jpg" alt="My selfie" width="150"/>
             <p>Syed Abdur Rehman</p>
             <h1>Syed Abdur Rehman</h1> 
             <audio controls >
                 <source src="audios/My-name.m4a" />
             </audio>
                 <p>I am Syed Abdur Rehman, Bs Information Technology Student of University of Agriculture Peshawar. Now currently I am in first semester.</p>
-                <ol>My Education
+                <ol style="font-weight: bold; font-size: larger;">My Education
                     <li>Matric</li>
                     <li>FSC</li>
                 </ol>
@@ -53,18 +67,11 @@
             </div>
                 <h2>You can subscribe to our page:</h2>
                 <form>
-                <input type="email" name="email" placeholder="Your email" required>
-                <input type="submit" value="Subscribe">
+                <input type="email" name="email" placeholder="Enter email" required>
+                <input id="button" type="submit" value="Subscribe">
             </form> <br> <br>
-            <div id="nav">
-                <a href="./contact.html" target="_blank">Contact</a>
-                <br>
-                <a href="./project.html" target="_blank">Projects</a>
-                <br>
-                <a href="./skill.html" target="_blank">Skills</a>
-                <br>
-                <a href="#top">Go to top</a>
-            </div>
+                        <a href="#nav">Go to top</a>
+
             
         </div>
         </body>
